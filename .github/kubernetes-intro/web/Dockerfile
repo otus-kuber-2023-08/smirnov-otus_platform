@@ -1,12 +1,7 @@
-FROM ubuntu
-RUN apt-get -y update
-RUN apt-get install -y nginx
-RUN    mkdir app 
-RUN    echo "working" >> /app/homework.html 
-RUN    chown -R 1001:1001 /app
-
+FROM nginx
+RUN mkdir /app
+COPY config.conf /etc/nginx/conf.d/default.conf
+COPY . /app/
+ARG UID=1001
 WORKDIR /app
-
-CMD ["nginx"]
-
 EXPOSE 8000
