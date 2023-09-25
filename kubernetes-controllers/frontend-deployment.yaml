@@ -40,5 +40,3 @@ spec:
           value: "checkoutservice:5050"
         - name: AD_SERVICE_ADDR
           value: "adservice:9555"
-
-          #   value: "Replace this with a message you want to display on all pages."
