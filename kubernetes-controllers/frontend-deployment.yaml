@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: subnature/otus-docker-frontend:v1.0.0.2
+        image: subnature/otus-docker-frontend:v1
         readinessProbe:
           initialDelaySeconds: 10
           httpGet:
