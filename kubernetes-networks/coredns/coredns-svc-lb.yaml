@@ -10,7 +10,7 @@ spec:
   selector:
     k8s-app: kube-dns
   type:
-  loadBalancerIP: 172.17.255.1
+  loadBalancerIP: 172.17.255.10
   ports:
   - name: tcpdns
     protocol: TCP
@@ -29,7 +29,7 @@ spec:
   selector:
     k8s-app: kube-dns
   type: LoadBalancer
-  loadBalancerIP: 172.17.255.1
+  loadBalancerIP: 172.17.255.10
   ports:
   - name: udpdns
     protocol: UDP
